@@ -1,0 +1,36 @@
+{
+  "name": "@telefy/teleswap-trident-sdk",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/trident-sdk.esm.js",
+  "repository": "https://github.com/Telefy/teleswap-trident-sdk.git",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "watch": "tsdx watch",
+    "test": "tsdx test --passWithNoTests",
+    "prepublishOnly": "npx tsdx build"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.4.0",
+    "@ethersproject/bignumber": "^5.4.0",
+    "@ethersproject/solidity": "^5.4.0",
+    "@mazelon/teleswap-sdk": "1.0.3",
+    "@sushiswap/trident": "1.0.0-canary.38",
+    "@telefy/teleswap-core-sdk": "^1.0.7",
+    "@telefy/teleswap-tines-sdk": "1.0.0",
+    "tiny-invariant": "^1.1.0"
+  },
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  }
+}
